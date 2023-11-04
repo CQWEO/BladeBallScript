@@ -32,3 +32,6 @@ getgenv().visualizer = true
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/BLADEBALL"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/AutoParryBallByRechedmcvnAndWaterExecute"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/FileNice"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/FPSSCRIPTS"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/Circle"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/BarFPSms"))()
