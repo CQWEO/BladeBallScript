@@ -33,6 +33,7 @@ pcall(function() getgenv().HowToUse = true end)
 getgenv().visualizer = true
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/BLADEBALL"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/AutoParryBallByRechedmcvnAndWaterExecute"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/FileNice"))()
 
 repeat wait() until game:IsLoaded() wait(2)
 local ScreenGui = Instance.new("ScreenGui")
