@@ -27,7 +27,7 @@ lighting.Brightness = 3
 -- Consolidate common operations into functions for better readability and maintainability
 local function handleBasePart(part)
   part.Material = Enum.Material.Plastic
-  part.Reflectance = 0.1
+  part.Reflectance = 0.45
 end
 
 -- Handle existing descendants
