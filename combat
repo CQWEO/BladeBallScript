@@ -22,7 +22,7 @@ function warnmessage(title, text, timee)
 	Notification:Notify(
 		{Title = title, Description = text},
 		{OutlineColor = Color3.fromRGB(7,9.9),Time = timee or 5, Type = "image"},
-		{Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(255, 84, 84)}
+		{Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.new(7,9.9)}
 	)
 end
 
