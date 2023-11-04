@@ -28,8 +28,6 @@ end
 
 if YHLOADED then warnmessage("YOU HUB", "Script Loaded Credits By Rechedmcvn", 10) return end
 pcall(function() getgenv().YHLOADED = true end)
-if HowToUse then warnmessage("YOU HUB", "Jump when the ball is close to you", 3) return end
-pcall(function() getgenv().HowToUse = true end)
 getgenv().visualizer = true
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/BLADEBALL"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/AutoParryBallByRechedmcvnAndWaterExecute"))()
