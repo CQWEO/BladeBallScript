@@ -35,3 +35,4 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/FPSSCRIPTS"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/Circle"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/BarFPSms"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/ScriptsMoment/main/ScriptParryV1"))()
