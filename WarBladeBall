@@ -1,38 +1,8 @@
-local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
-local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
-function message(text)
-	spawn(function()
-		local msg = Instance.new("Message",workspace)
-		msg.Text = tostring(text)
-		task.wait(5)
-		msg:Destroy()
-
-		--firesignal(entityinfo.Caption.OnClientEvent,tostring(text)) 
-	end)
-end
-
-function normalmessage(title, text, timee)
-	Notification:Notify(
-		{Title = title, Description = text},
-		{OutlineColor = Color3.new(7,9.9),Time = timee or 5, Type = "default"}
-	)
-end
-
-function warnmessage(title, text, timee)
-	Notification:Notify(
-		{Title = title, Description = text},
-		{OutlineColor = Color3.fromRGB(7,9.9),Time = timee or 5, Type = "image"},
-		{Image = "rbxassetid://14124028273", ImageColor = Color3.new(7,9.9)}
-	)
-end
-
-if YHLOADED then warnmessage("Script Loaded [YOUHUB]", "Jump when the ball is close to you to slash", 3) return end
-pcall(function() getgenv().YHLOADED = true end)
-getgenv().visualizer = true
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/BLADEBALL"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/AutoParryBallByRechedmcvnAndWaterExecute"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/FileNice"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/FPSSCRIPTS"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/Circle"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/BarFPSms"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/ScriptsMoment/main/ScriptParryV1"))()
+local v0=loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing/main/Gui%20Lib%20%5BLibrary%5D"))();local v1=loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/COLORS/main/README.md"))();local v2=loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/Gui/main/Gui%20Lib%20%5BSaveManager%5D"))();local v3=loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing/main/Blackking%20%5BGuiNew!%5D"))();local v4=Instance.new("Sound");v4.Parent=game.SoundService;v4.SoundId="rbxassetid://4590657391";v4.Volume=5;v4.PlayOnRemove=true;v4:Destroy();v3:Introduction();wait(1);v0:Notify("Loaded");local v44=v0:CreateWindow({Title="YOU HUB | BLADE BALL | VERSION 1.1 " ,Center=true,AutoShow=true,TabPadding=5,MenuFadeTime=0.2 + 0 });local v45={Main=v44:AddTab("Main")};local v46=v45.Main:AddLeftGroupbox(" ");game:GetService("RunService").RenderStepped:Connect(function()pcall(function()if _G.speedkuys then game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=_G.SelectBootst;end end);end);game:GetService("RunService").RenderStepped:Connect(function()pcall(function()if (_G.SpeedHack and (game.Players.LocalPlayer.Character.Humanoid.WalkSpeed==(20))) then game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=24;elseif (_G.SpeedHack and (game.Players.LocalPlayer.Character.Humanoid.WalkSpeed==(28))) then game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=32;elseif (_G.SpeedHack and (game.Players.LocalPlayer.Character.Humanoid.WalkSpeed==(36))) then game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=40;elseif _G.SpeedHack then local v796= 40 + game.Players.LocalPlayer.Character.Humanoid:GetAttribute("SpeedBoost") ;if (game.Players.LocalPlayer.Character.Humanoid.WalkSpeed<=v796) then game.Players.LocalPlayer.Character.Humanoid.WalkSpeed+=_G.SelectBoots end end end);end);v46:AddSlider("MySlider",{Text="Field of View ",Default=120,Min=0 ,Max=120,Rounding=0 -0 ,Compact=true,Callback=function(v81)if v81 then game:GetService("Workspace").Camera.FieldOfView = v81 end end});_G.SelectBoots=1790.5 -(214 + 1570) ;_G.FieldOfViewe=120;v46:AddSlider("MySlider",{Text="WalkSpeed ",Default=50,Min=0,Max=100,Rounding=0 -0 ,Compact=true,Callback=function(v201)if v201 then local SpeedBoost = true 
+game:GetService("RunService").RenderStepped:Connect(function()pcall(function()if SpeedBoost then game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v201 end end});v46:AddSlider("MySlider",{Text="Jumppower ",Default=50,Min=0 ,Max=100,Rounding=0 -0 ,Compact=true,Callback=function(v202)if v202 then 
+local JP = true 
+game:GetService("RunService").RenderStepped:Connect(function()pcall(function()if JP then game.Players.LocalPlayer.Character.Humanoid.JumpPower = v202 end end}); game:GetService("RunService").RenderStepped:Connect(function()pcall(function()if _G.FullBright then local v315=0 + 0 ;while true do if (v315==1) then game:GetService("Lighting").ClockTime=47 -33 ;game:GetService("Lighting").GlobalShadows=false;v315=2;end if (v315==0) then game:GetService("Lighting").FogEnd=100000;game:GetService("Lighting").Brightness=3;v315=1;end if (v315==(1996 -(109 + 1885))) then game:GetService("Lighting").OutdoorAmbient=Color3.new(1,1,1);break;end end end end);end);v46:AddToggle("MyToggle",{Text="Fullbright",Default=false,Tooltip="No Darkness Light On All",Callback=function(v1)if v1 then _G.FullBright=true;else _G.FullBright=false;game:GetService("Lighting").FogEnd=11111111533265722 -(802 + 24) ;game:GetService("Lighting").Brightness=5 -2 ;game:GetService("Lighting").ClockTime=20;game:GetService("Lighting").GlobalShadows=false;game:GetService("Lighting").OutdoorAmbient=Color3.new(1,1,1);end end});v46:AddToggle("MyToggle",{Text="No Shake Camera",Default=false,Tooltip="No Shake Cam",Callback=function(v89)if v89 then localplayer.PlayerScripts.CameraShake.Value = CFrame.new(0,0,0) * CFrame.new(0,0,0);end end});local v46=v45.Main:AddLeftGroupbox(" ");v46:AddButton({Text="Infjump",Default=false,Tooltip="infinity jump",Func=function(v90)if v90 then 
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+    if InfiniteJumpEnabled then game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+end end);end end});v46:AddButton({Text="Auto Slash Ball",Default=false,Tooltip="Auto Parry",Func=function()loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/BLADEBALL"))();end});v46:AddButton({Text="Locate Speed Of Ball",Default=false,Tooltip="Locate Speed Of Ball",Func=function()loadstring(game:HttpGet("https://raw.githubusercontent.com/CQWEO/BladeBallScript/main/AutoParryBallByRechedmcvnAndWaterExecute"))();end});
